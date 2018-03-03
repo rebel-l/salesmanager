@@ -2,7 +2,7 @@
   "name": "salesmanager",
   "version": "1.0.0",
   "description": "Just a try to quickly build a tool to track sales and visualize them in a graph",
-  "main": "./js/index.js",
+  "main": "./client/index.js",
   "scripts": {
     "build-dev": "webpack --mode development --config webpack.dev.js",
     "build": "webpack --mode production --config webpack.prod.js",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/rebel-l/salesmanager#readme",
   "dependencies": {
     "react": "^16.2.0",
+    "react-css-modules": "^4.7.1",
     "react-dom": "^16.2.0",
     "webpack": "^4.0.1",
     "webpack-cli": "^2.0.10"

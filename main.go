@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gorilla/mux"
-	"github.com/rebel-l/salesmanager/endpoint"
+	"github.com/rebel-l/salesmanager/server/endpoint"
 	log "github.com/sirupsen/logrus"
 	"net/http"
 	"strconv"

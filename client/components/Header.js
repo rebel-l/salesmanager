@@ -1,10 +1,16 @@
+'use strict';
+
 import React from 'react';
-import Welcome from "./Welcome";
+import Button from './Button';
 
 function Header(props) {
     return (
         <header>
-            <Welcome />
+            <nav>
+                <Button title="Start"/>
+                <Button title="Stats"/>
+                <Button title="Administration"/>
+            </nav>
         </header>
     );
 }

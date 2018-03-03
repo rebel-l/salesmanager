@@ -11,6 +11,7 @@ func InitFileserverEndpoint(r *mux.Router)  {
 
 	fs := http.FileServer(http.Dir("public"))
 	r.Handle("/", http.StripPrefix("/", fs)).Methods(http.MethodGet)
+	r.Handle("/app.bundle.js", http.StripPrefix("/", fs)).Methods(http.MethodGet)
 
 	log.Debug("Fileserver endpoint: initialized!")
 }

@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        client: './client/index.js'
+        client: './client/app.js'
     },
     plugins: [],
     output: {

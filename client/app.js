@@ -16,26 +16,16 @@ import Footer from './components/Footer';
 window.store = store;
 // window.navigationClick = navigationClick;
 
-const defaultMainTitle = "Welcome to Sales Manager";
-
 class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.main = {};
-        this.main.title = defaultMainTitle;
-
-        // this.handleClick = this.handleClick.bind(this);
-    }
-    //
-    // handleClick() {
-    //     console.log('Click from app!', this, arguments);
+    // constructor(props) {
+    //     super(props);
     // }
 
     render() {
         return (
             <div>
-                <Header />
-                <Main title={this.main.title}/>
+                <Header/>
+                <Main/>
                 <Footer/>
             </div>
         );

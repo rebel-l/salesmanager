@@ -15,16 +15,11 @@ class ConnectedMain extends Component {
     }
 
     render() {
+        let last = this.props.navigation[this.props.navigation.length - 1];
         return (
             <main>
-                <Title title={this.title}/>
-                <ul>
-                    {this.props.navigation.map(el => (
-                        <li key={el.action}>
-                            {el.title}
-                        </li>
-                    ))}
-                </ul>
+                <Title title={last.title}/>
+                <p>Action: {last.action}</p>
             </main>
         );
     }

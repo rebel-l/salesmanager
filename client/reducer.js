@@ -1,7 +1,14 @@
 'use strict';
 
+const defaultTitle = "Welcome to Sales Manager";
+
 const initialState = {
-    navigation: [{title: "Yeah", action: ""}]
+    navigation: [
+        {
+            title: defaultTitle,
+            action: ""
+        }
+    ]
 };
 
 import {NAVIGATION_CLICK} from "./constants/actionTypes";

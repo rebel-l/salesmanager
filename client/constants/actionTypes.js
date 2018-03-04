@@ -1,3 +1,3 @@
 'use strict';
 
-export const NAVIGATION_CLICK = "navigation.click";
+export const NAVIGATE = "navigation.click";

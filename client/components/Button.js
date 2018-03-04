@@ -1,13 +1,15 @@
 'use strict';
 
+// Framework
 import React, {Component} from 'react';
 import { connect } from "react-redux";
-import { navigationClick } from "./../actions/index";
-// import Navigation from './../models/Navigation';
+
+// Actions
+import navigate from "../actions/navigate";
 
 const mapDispatchToProps = dispatch => {
     return {
-        navigationClick: navigation => dispatch(navigationClick(navigation))
+        navigationClick: navigation => dispatch(navigate(navigation))
     };
 };
 

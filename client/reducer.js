@@ -11,12 +11,12 @@ const initialState = {
     ]
 };
 
-import {NAVIGATION_CLICK} from "./constants/actionTypes";
+import {NAVIGATE} from "./constants/actionTypes";
 
 const Reducer = (state = initialState, action) => {
     console.log("Event", action.type, action.payload);
     switch (action.type) {
-        case NAVIGATION_CLICK:
+        case NAVIGATE:
             return { ...state, navigation: [...state.navigation, action.payload] };
         default:
             return state;

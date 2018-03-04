@@ -1,7 +1,10 @@
 'use strict';
 
+//Framework
 import React, {Component} from 'react';
 import { connect } from "react-redux";
+
+// Components
 import Title from './Title';
 
 const mapStateToProps = state => {

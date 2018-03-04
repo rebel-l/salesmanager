@@ -27,12 +27,7 @@ class Button extends Component {
     }
 
     handleClick() {
-        // let nav = new Navigation();
-        // nav.title = this.title;
-        // nav.action = this.action;
-        console.log('You clicked me now!', this.title, this.action);
         this.props.navigationClick({title: this.title, action: this.action})
-        // this.main.title = this.title;
     }
 
     render() {

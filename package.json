@@ -2,7 +2,7 @@
   "name": "salesmanager",
   "version": "1.0.0",
   "description": "Just a try to quickly build a tool to track sales and visualize them in a graph",
-  "main": "./client/app.js",
+  "main": "./client/index.js",
   "scripts": {
     "build-dev": "webpack --mode development --config webpack.dev.js",
     "build": "webpack --mode production --config webpack.prod.js",

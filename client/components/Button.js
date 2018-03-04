@@ -19,9 +19,6 @@ class Button extends Component {
         this.action = props.action;
         this.title = props.title;
         this.main = props.main;
-        // if(this.parentClick) {
-        //     this.parentClick = this.parentClick.bind(this);
-        // }
 
         this.handleClick = this.handleClick.bind(this);
     }

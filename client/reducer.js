@@ -1,25 +1,10 @@
 'use strict';
 
-const defaultTitle = "Welcome to Sales Manager";
+import { combineReducers } from 'redux';
+import Navigation from './reducers/navigation';
 
-const initialState = {
-    navigation: [
-        {
-            title: defaultTitle,
-            action: ""
-        }
-    ]
-};
-
-import {NAVIGATE} from "./constants/actionTypes";
-
-const Reducer = (state = initialState, action) => {
-    switch (action.type) {
-        case NAVIGATE:
-            return { ...state, navigation: [...state.navigation, action.payload] };
-        default:
-            return state;
-    }
-};
+const Reducer = combineReducers({
+    navigation: Navigation
+});
 
 export default Reducer;

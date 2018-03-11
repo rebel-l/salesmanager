@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        app: './js/index.js'
+        client: './client/index.js'
     },
     plugins: [],
     output: {
@@ -13,12 +13,11 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
+                exclude: /(node_modules)/,
                 use: {
                     loader: 'babel-loader'
                 }
-            },
-
+            }
         ]
     }
 };
